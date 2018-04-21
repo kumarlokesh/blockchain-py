@@ -1,0 +1,3 @@
+pycrypto
+flask
+flask_cors
