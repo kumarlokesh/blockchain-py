@@ -7,15 +7,12 @@ An implementation of Blockchain in Python
 > virtualenv -p /usr/bin/python3.5 blockchain-env
 
 # Activate virtual environment
-> cd blockchain-env/
+> cd blockchain-env
 > source bin/activate
 
 # cd to blockchain-py directory
 > pip install -r requirements.txt
 
 # Start client
-> cd client/
+> cd client
 > python client.py
-Blockchain client present in client directory
-
-
