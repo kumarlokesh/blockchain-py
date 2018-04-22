@@ -56,18 +56,18 @@ class Blockchain:
         """
         Parse and validate node URL
         """
-        node_url = None
+        url = None
 
         parsed_url = urlparse(node_url)
         if parsed_url.netloc:
-            node_url = parsed_url.netloc
+            url = parsed_url.netloc
         elif parsed_url.path:
             # Accepts an URL without scheme like '192.168.0.5:5000'.
-            node_url = parsed_url.path
+            url = parsed_url.path
         else:
             raise ValueError('Invalid URL')
 
-        return node_url
+        return url
 
     def register_node(self, node_url):
         """
